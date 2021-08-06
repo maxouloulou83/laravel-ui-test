@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostControllers;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PostControllers::class, 'index']);
+
+
+//Navbar
+Route::get('/register', function (){
+    return view('auth/register');
+})->name('register');
+
+Route::get('/login', function (){
+    return view('auth/login');
+})->name('login');
+
+//register
+//Route::get('/register', 'RegisterController@create');
+//Route::post('register', 'RegisterController@store');
+
+
