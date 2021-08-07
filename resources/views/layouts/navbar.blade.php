@@ -1,6 +1,6 @@
 <div class="md:flex md:items-center md:justify-between bg-gray-900 py-5 px-12">
     <div class="flex-1 min-w-0">
-        <a class="text-2xl font-bold leading-7 text-white sm:text-3xl sm:truncate ">
+        <a href="{{ route('home') }}" class="text-2xl font-bold leading-7 text-white sm:text-3xl sm:truncate ">
             Home
         </a>
 
